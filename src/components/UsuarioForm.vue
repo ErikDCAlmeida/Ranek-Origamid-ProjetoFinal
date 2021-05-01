@@ -2,12 +2,20 @@
   <form>
     <label for="nome">Nome</label>
     <input type="text" name="nome" id="nome" v-model="nome" />
-    <!-- <label for="email">Email</label>
+    <label for="email">Email</label>
     <input type="email" name="email" id="email" v-model="email" />
     <label for="senha">Senha</label>
     <input type="password" name="senha" id="senha" v-model="senha" />
     <label for="cep">CEP</label>
-    <input type="text" name="cep" id="cep" v-model="cep" />
+    <input
+      type="text"
+      name="cep"
+      id="cep"
+      v-model="cep"
+      @keyup="preencherCep"
+    />
+    <label for="rua">Rua</label>
+    <input type="text" name="rua" id="rua" v-model="rua" />
     <label for="numero">Número</label>
     <input type="number" name="numero" id="numero" v-model="numero" />
     <label for="bairro">Bairro</label>
@@ -15,7 +23,7 @@
     <label for="cidade">Cidade</label>
     <input type="text" name="cidade" id="cidade" v-model="cidade" />
     <label for="estado">Estado</label>
-    <input type="text" name="estado" id="estado" v-model="estado" /> -->
+    <input type="text" name="estado" id="estado" v-model="estado" />
     <div class="button">
       <slot></slot>
     </div>
@@ -24,6 +32,7 @@
 
 <script>
 import { mapFields } from "@/helpers.js";
+import { getCep } from "@/services.js";
 
 export default {
   name: "UsuarioForm",
@@ -51,6 +60,19 @@ export default {
     //     this.$store.commit("UPDATE_USUARIO", { nome: value });
     //   },
     // },
+  },
+  methods: {
+    preencherCep() {
+      const cep = this.cep.replace(/\D/g, "");
+      if (cep.length === 8) {
+        getCep(cep).then((r) => {
+          this.rua = r.data.logradouro;
+          this.bairro = r.data.bairro;
+          this.cidade = r.data.localidade;
+          this.estado = r.data.uf;
+        });
+      }
+    },
   },
 };
 </script>
