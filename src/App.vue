@@ -2,7 +2,9 @@
   <div id="app">
     <Header />
     <main>
-      <router-view />
+      <transition mode="out-in">
+        <router-view />
+      </transition>
     </main>
     <Footer />
   </div>
@@ -46,6 +48,9 @@ a {
 img {
   display: block;
   max-width: 100%;
+}
+label {
+  margin-bottom: 5px;
 }
 .btn {
   display: block;
