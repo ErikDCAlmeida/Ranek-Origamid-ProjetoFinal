@@ -37,7 +37,6 @@ export default {
     paginas() {
       const current = Number(this.$route.query._page);
       const range = 9;
-      const offset = Math.ceil(range / 2);
       const total = this.paginasTotal;
       const pagesArray = [];
 
@@ -45,8 +44,8 @@ export default {
         pagesArray.push(i);
       }
 
-      pagesArray.splice(0, current - offset);
-      pagesArray.splice(range, total);
+      pagesArray.splice(0, current - 5);
+      pagesArray.splice(range, total - 5);
 
       return pagesArray;
     },
@@ -57,6 +56,8 @@ export default {
 <style scoped>
 ul {
   grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
 }
 li {
   display: inline-block;

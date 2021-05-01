@@ -5,6 +5,9 @@ import store from "./store";
 
 Vue.config.productionTip = false;
 
+import PaginaCarregando from "@/components/PaginaCarregando.vue";
+Vue.component("PaginaCarregando", PaginaCarregando);
+
 new Vue({
   router,
   store,
