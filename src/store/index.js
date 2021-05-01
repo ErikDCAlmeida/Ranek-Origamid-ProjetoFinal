@@ -5,6 +5,7 @@ import { api } from "@/services.js";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
+  strict: true, //Previne que os estados sejam mudados do lado de fora, sendo possível apenas com uma MUTATION.
   state: {
     login: false,
     usuario: {
@@ -25,7 +26,7 @@ export default new Vuex.Store({
       state.login = payload;
     },
     UPDATE_USUARIO(state, payload) {
-      state.usuario = payload;
+      state.usuario = Object.assign(state.usuario, payload); //Combinação de objetos para quando já existe um informação, ele substituir apenas seu resultado.
     },
   },
   actions: {

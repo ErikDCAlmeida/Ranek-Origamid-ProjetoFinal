@@ -2,7 +2,7 @@
   <form>
     <label for="nome">Nome</label>
     <input type="text" name="nome" id="nome" v-model="nome" />
-    <label for="email">Email</label>
+    <!-- <label for="email">Email</label>
     <input type="email" name="email" id="email" v-model="email" />
     <label for="senha">Senha</label>
     <input type="password" name="senha" id="senha" v-model="senha" />
@@ -15,7 +15,7 @@
     <label for="cidade">Cidade</label>
     <input type="text" name="cidade" id="cidade" v-model="cidade" />
     <label for="estado">Estado</label>
-    <input type="text" name="estado" id="estado" v-model="estado" />
+    <input type="text" name="estado" id="estado" v-model="estado" /> -->
     <div class="button">
       <slot></slot>
     </div>
@@ -23,19 +23,34 @@
 </template>
 
 <script>
+import { mapFields } from "@/helpers.js";
+
 export default {
   name: "UsuarioForm",
-  data() {
-    return {
-      nome: "",
-      email: "",
-      senha: "",
-      cep: "",
-      numero: "",
-      bairro: "",
-      cidade: "",
-      estado: "",
-    };
+  computed: {
+    ...mapFields({
+      fields: [
+        "nome",
+        "email",
+        "senha",
+        "rua",
+        "cep",
+        "numero",
+        "bairro",
+        "cidade",
+        "estado",
+      ],
+      base: "usuario",
+      mutation: "UPDATE_USUARIO",
+    }), //Utilizando desse modo é a mesma coisa que fazer a parte de baixo comentada para todos um por um, só que mais resumido.
+    // nome: {
+    //   get() {
+    //     return this.$store.state.usuario.nome;
+    //   },
+    //   set(value) {
+    //     this.$store.commit("UPDATE_USUARIO", { nome: value });
+    //   },
+    // },
   },
 };
 </script>
