@@ -10,6 +10,30 @@
       "numero": "25",
       "estado": "UF",
       "cidade": "Cidade Logo Aqui"
+    },
+    {
+      "id": "maria@ranek.com",
+      "nome": "Maria",
+      "email": "maria@ranek.com",
+      "senha": "1234",
+      "cep": "49502200",
+      "rua": "Rua Pedro Antenor de Vasconcelos",
+      "numero": "2222",
+      "bairro": "Marcela",
+      "cidade": "Itabaiana",
+      "estado": "SE"
+    },
+    {
+      "id": "jose@ranek.com",
+      "nome": "José Carlos",
+      "email": "jose@ranek.com",
+      "senha": "12345",
+      "cep": "55493000",
+      "rua": "Boa vista",
+      "numero": "9000",
+      "bairro": "Ituguaçu",
+      "cidade": "Altinho",
+      "estado": "PE"
     }
   ],
   "produto": [
@@ -39,7 +63,8 @@
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
       "fotos": null
-    },{
+    },
+    {
       "id": "notebook",
       "nome": "Notebook",
       "usuario_id": "erikdcalmeida@ranek.com",
@@ -65,7 +90,8 @@
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
       "fotos": null
-    },{
+    },
+    {
       "id": "notebook",
       "nome": "Notebook",
       "usuario_id": "erikdcalmeida@ranek.com",
@@ -91,7 +117,8 @@
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
       "fotos": null
-    },{
+    },
+    {
       "id": "notebook",
       "nome": "Notebook",
       "usuario_id": "erikdcalmeida@ranek.com",
@@ -117,7 +144,8 @@
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
       "fotos": null
-    },{
+    },
+    {
       "id": "notebook",
       "nome": "Notebook",
       "usuario_id": "erikdcalmeida@ranek.com",
@@ -143,7 +171,8 @@
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
       "fotos": null
-    },{
+    },
+    {
       "id": "notebook",
       "nome": "Notebook",
       "usuario_id": "erikdcalmeida@ranek.com",
@@ -169,7 +198,8 @@
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
       "fotos": null
-    },{
+    },
+    {
       "id": "notebook",
       "nome": "Notebook",
       "usuario_id": "erikdcalmeida@ranek.com",
@@ -195,7 +225,8 @@
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
       "fotos": null
-    },{
+    },
+    {
       "id": "notebook",
       "nome": "Notebook",
       "usuario_id": "erikdcalmeida@ranek.com",
@@ -221,7 +252,8 @@
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
       "fotos": null
-    },{
+    },
+    {
       "id": "notebook",
       "nome": "Notebook",
       "usuario_id": "erikdcalmeida@ranek.com",
@@ -247,7 +279,8 @@
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
       "fotos": null
-    },{
+    },
+    {
       "id": "notebook",
       "nome": "Notebook",
       "usuario_id": "erikdcalmeida@ranek.com",
@@ -273,7 +306,8 @@
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
       "fotos": null
-    },{
+    },
+    {
       "id": "notebook",
       "nome": "Notebook",
       "usuario_id": "erikdcalmeida@ranek.com",
@@ -299,7 +333,8 @@
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
       "fotos": null
-    },{
+    },
+    {
       "id": "notebook",
       "nome": "Notebook",
       "usuario_id": "erikdcalmeida@ranek.com",
@@ -325,7 +360,8 @@
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
       "fotos": null
-    },{
+    },
+    {
       "id": "notebook",
       "nome": "Notebook",
       "usuario_id": "erikdcalmeida@ranek.com",
@@ -351,7 +387,8 @@
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
       "fotos": null
-    },{
+    },
+    {
       "id": "notebook",
       "nome": "Notebook",
       "usuario_id": "erikdcalmeida@ranek.com",
@@ -377,7 +414,8 @@
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
       "fotos": null
-    },{
+    },
+    {
       "id": "notebook",
       "nome": "Notebook",
       "usuario_id": "erikdcalmeida@ranek.com",
@@ -403,7 +441,8 @@
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
       "fotos": null
-    },{
+    },
+    {
       "id": "notebook",
       "nome": "Notebook",
       "usuario_id": "erikdcalmeida@ranek.com",
