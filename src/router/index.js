@@ -25,9 +25,42 @@ const routes = [
   },
   {
     path: "/usuario",
-    name: "Usuario",
     component: () =>
       import(/* webpackChunkName: "usuario" */ "../views/usuario/Usuario.vue"),
+    children: [
+      {
+        path: "",
+        name: "Usuario",
+        component: () =>
+          import(
+            /* webpackChunkName: "usuarioprodutos" */ "../views/usuario/UsuarioProdutos.vue"
+          ),
+      },
+      {
+        path: "compras",
+        name: "Compras",
+        component: () =>
+          import(
+            /* webpackChunkName: "usuariocompras" */ "../views/usuario/UsuarioCompras.vue"
+          ),
+      },
+      {
+        path: "vendas",
+        name: "Vendas",
+        component: () =>
+          import(
+            /* webpackChunkName: "usuariovendas" */ "../views/usuario/UsuarioVendas.vue"
+          ),
+      },
+      {
+        path: "editar",
+        name: "UsuarioEditar",
+        component: () =>
+          import(
+            /* webpackChunkName: "usuarioeditar" */ "../views/usuario/UsuarioEditar.vue"
+          ),
+      },
+    ],
   },
 ];
 
