@@ -468,30 +468,6 @@
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
       "fotos": null
-    },
-    {
-      "nome": "Geladeira",
-      "preco": "12345",
-      "descricao": "Geladeira adiciona no projeto",
-      "fotos": null,
-      "usuario_id": "jose@ranek.com",
-      "id": "MKM_H_i"
-    },
-    {
-      "nome": "Fogão",
-      "preco": "345",
-      "descricao": "Fogão novo.",
-      "fotos": null,
-      "usuario_id": "erikdcalmeida@ranek.com",
-      "id": "LsyGqqN"
-    },
-    {
-      "nome": "Torradeira",
-      "preco": "123",
-      "descricao": "Torradeira nova.",
-      "fotos": null,
-      "usuario_id": "jose@ranek.com",
-      "id": "R8L8JwB"
     }
   ]
 }
