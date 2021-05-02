@@ -23,7 +23,7 @@ export default {
 };
 </script>
 
-<style scope>
+<style scoped>
 nav {
   display: flex;
   align-items: center;
