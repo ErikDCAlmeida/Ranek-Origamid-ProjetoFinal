@@ -2,14 +2,15 @@
   "usuario": [
     {
       "id": "erikdcalmeida@ranek.com",
-      "email": "erikdcalmeida@ranek.com",
       "nome": "Erik Danilo",
+      "email": "erikdcalmeida@ranek.com",
       "senha": "123",
-      "rua": "Rua Ali Perto",
       "cep": "12345678",
-      "numero": "25",
-      "estado": "UF",
-      "cidade": "Cidade Logo Aqui"
+      "rua": "Rua Ali Perto",
+      "numero": "9",
+      "bairro": "Alves de Souza",
+      "cidade": "Cidade Logo Aqui",
+      "estado": "UF"
     },
     {
       "id": "maria@ranek.com",
@@ -30,7 +31,7 @@
       "senha": "12345",
       "cep": "55493000",
       "rua": "Boa vista",
-      "numero": "9000",
+      "numero": "2000",
       "bairro": "Ituguaçu",
       "cidade": "Altinho",
       "estado": "PE"
