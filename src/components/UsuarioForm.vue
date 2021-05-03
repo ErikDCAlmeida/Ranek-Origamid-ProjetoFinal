@@ -1,11 +1,13 @@
 <template>
   <form>
-    <label for="nome">Nome</label>
-    <input type="text" name="nome" id="nome" v-model="nome" />
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" v-model="email" />
-    <label for="senha">Senha</label>
-    <input type="password" name="senha" id="senha" v-model="senha" />
+    <div v-if="mostrarDadosLogin" class="usuario">
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" v-model="nome" />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" v-model="email" />
+      <label for="senha">Senha</label>
+      <input type="password" name="senha" id="senha" v-model="senha" />
+    </div>
     <label for="cep">CEP</label>
     <input
       type="text"
@@ -60,6 +62,9 @@ export default {
     //     this.$store.commit("UPDATE_USUARIO", { nome: value });
     //   },
     // },
+    mostrarDadosLogin() {
+      return !this.$store.state.login || this.$route.name === "usuarioEditar";
+    },
   },
   methods: {
     preencherCep() {
@@ -78,10 +83,14 @@ export default {
 </script>
 
 <style scoped>
-form {
+form,
+.usuario {
   display: grid;
   grid-template-columns: 80px 1fr;
   align-items: center;
+}
+.usuario {
+  grid-column: 1 / 3;
 }
 .button {
   grid-column: 2;

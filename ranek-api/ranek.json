@@ -1,4 +1,69 @@
 {
+  "transacao": [
+    {
+      "compradorId": "erikdcalmeida@ranek.com",
+      "vendedorId": "erikdcalmeida@ranek.com",
+      "produto": {
+        "id": "notebook",
+        "nome": "Notebook",
+        "usuario_id": "erikdcalmeida@ranek.com",
+        "preco": "4999",
+        "vendido": "false",
+        "descricao": "Esse é um novo notebook.",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "12345678",
+        "rua": "Rua Ali Perto",
+        "numero": "9",
+        "bairro": "Alves de Souza",
+        "cidade": "Cidade Logo Aqui"
+      },
+      "id": 1
+    },
+    {
+      "compradorId": "kiko@ranek.com",
+      "vendedorId": "erikdcalmeida@ranek.com",
+      "produto": {
+        "id": "tablet",
+        "nome": "Tablet",
+        "usuario_id": "erikdcalmeida@ranek.com",
+        "preco": "1399",
+        "vendido": "false",
+        "descricao": "Esse é um novo tablet.",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "69086053",
+        "rua": "Rua Maximino Corrêa",
+        "numero": "444",
+        "bairro": "São José Operário",
+        "cidade": "Manaus"
+      },
+      "id": 2
+    },
+    {
+      "compradorId": "maria@maria.com",
+      "vendedorId": "erikdcalmeida@ranek.com",
+      "produto": {
+        "id": "smartphone",
+        "nome": "Smartphone",
+        "usuario_id": "erikdcalmeida@ranek.com",
+        "preco": "1999",
+        "vendido": "false",
+        "descricao": "Esse é um novo smartphone.",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "48607250",
+        "rua": "Rua da União",
+        "numero": "555",
+        "bairro": "General Dutra",
+        "cidade": "Paulo Afonso"
+      },
+      "id": 3
+    }
+  ],
   "usuario": [
     {
       "id": "erikdcalmeida@ranek.com",
@@ -35,6 +100,30 @@
       "bairro": "Ituguaçu",
       "cidade": "Altinho",
       "estado": "PE"
+    },
+    {
+      "id": "kiko@ranek.com",
+      "nome": "",
+      "email": "kiko@ranek.com",
+      "senha": "12345",
+      "cep": "69086053",
+      "rua": "Rua Maximino Corrêa",
+      "numero": "444",
+      "bairro": "São José Operário",
+      "cidade": "Manaus",
+      "estado": "AM"
+    },
+    {
+      "id": "maria@maria.com",
+      "nome": "maria",
+      "email": "maria@maria.com",
+      "senha": "123451",
+      "cep": "48607250",
+      "rua": "Rua da União",
+      "numero": "555",
+      "bairro": "General Dutra",
+      "cidade": "Paulo Afonso",
+      "estado": "BA"
     }
   ],
   "produto": [
