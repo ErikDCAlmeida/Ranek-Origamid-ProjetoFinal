@@ -62,6 +62,27 @@
         "cidade": "Paulo Afonso"
       },
       "id": 3
+    },
+    {
+      "compradorId": "erikdcalmeida@ranek.com",
+      "vendedorId": "erikdcalmeida@ranek.com",
+      "produto": {
+        "id": "notebook",
+        "nome": "Notebook",
+        "usuario_id": "erikdcalmeida@ranek.com",
+        "preco": "4999",
+        "vendido": "false",
+        "descricao": "Esse é um novo notebook.",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "12345678",
+        "rua": "Rua Ali Perto",
+        "numero": "9",
+        "bairro": "Alves de Souza",
+        "cidade": "Cidade Logo Aqui"
+      },
+      "id": 4
     }
   ],
   "usuario": [
